@@ -1,9 +1,8 @@
-import ConditionsSection from '@/components/homePage/ConditionsSection';
+import ConditionsSection from '@/components/frontPage/ConditionsSection';
 import { Link } from 'react-router-dom';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import React,{useEffect} from "react";
-import FAQSection from '@/components/homePage/FAQSection';
 export const FrontPage = () => {
     useEffect(() => {
         AOS.init();
@@ -18,7 +17,6 @@ export const FrontPage = () => {
                     </Link>
                 </div>
                 <ConditionsSection/> 
-                <FAQSection/>
             </div>
         </>
     );
