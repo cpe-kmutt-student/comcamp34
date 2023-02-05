@@ -31,8 +31,8 @@ const LearningSection = () => {
                      Web <br /> Development
                   </p>
                   <p className="tracking-widest text-[0.9vw] font-bai-jamjuree texl-left text-base-black/75 mt-2">
-                     ปลดล็อคศักยภาพในการควบคุมอุปกรณ์ที่เปรียบ
-                     เสมือนเครื่องคอมพิวเตอร์ขนาดเท่าฝ่ามือของคุณ เพื่อสรรค์สร้างเทคโนโลยีสุดล้ำแห่งอนาคต</p>
+                     สร้างเว็บไซต์ด้วยตนเองไม่ยาก เรียนรู้การสร้างเว็บไซต์จากศูนย์ ด้วย HTML ตกแต่งหน้าตา 
+                     เว็บไซต์รวมถึงเพิ่มลูกเล่นตาม ต้องการ ด้วย CSS และ Javascript</p>
                </div>
             </div>
             <div className="absolute top-2 right-[5%] text-left w-[25%] flex flex-col">
