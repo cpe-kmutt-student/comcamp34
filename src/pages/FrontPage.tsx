@@ -6,6 +6,7 @@ import React,{useEffect} from "react";
 import Navbar from '@/components/registrationForm/Navbar';
 import LandingSection from '@/components/frontPage/LandingSection';
 import FAQSection from '@/components/homePage/FAQSection';
+import LearningSection from '@/components/homePage/LearningSection';
 export const FrontPage = () => {
     useEffect(() => {
         AOS.init();
@@ -13,8 +14,9 @@ export const FrontPage = () => {
     return(
         <>
         <Navbar/>
-           <div className="flex h-screen flex-col">
+           <div className="flex flex-col">
                 <LandingSection/>
+                <LearningSection/>
                 <ConditionsSection/> 
                 <FAQSection/>
             </div>
