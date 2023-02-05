@@ -8,10 +8,10 @@ const LearningSection = () => {
             Learning
          </p>
          <div className="m-auto mb-32 mt-14 relative overflow-x-hidden hidden lg:block">
-            <img src="assets/frontPage/handAndPhoneLearningSection.svg" className="w-2/3  ml-auto mb-auto"
+            <img src="assets/frontPage/handAndPhoneLearningSection.png" className="w-[71.5%]  ml-auto mb-auto"
                data-aos="fade-left" data-aos-delay="200"
             />
-            <div className="absolute top-0 left-[15%] text-left w-1/5 flex flex-col">
+            <div className="absolute top-0 left-[10%] text-left w-1/5 flex flex-col">
                <div data-aos="zoom-in" data-aos-delay="250">
                   <p className="font-teko tracking-widest text-[3vw] drop-shadow-lg text-base-black">C Programming</p>
                   <p className="tracking-widest text-[0.9vw] font-bai-jamjuree text-base-black/75">
@@ -35,16 +35,19 @@ const LearningSection = () => {
                      เว็บไซต์รวมถึงเพิ่มลูกเล่นตาม ต้องการ ด้วย CSS และ Javascript</p>
                </div>
             </div>
-            <div className="absolute top-2 right-[5%] text-left w-[25%] flex flex-col">
+            <div className="absolute lg:top-4 top-2 right-[7.5%] text-left w-[25%] flex flex-col">
                <div data-aos="zoom-in" data-aos-delay="250">
-                  <p className="font-teko tracking-widest text-[3vw] drop-shadow-lg text-base-black leading-10">Data Analytics
-                     and Visualization </p>
+                  <p className="font-teko tracking-widest text-[3vw] drop-shadow-lg text-base-black 
+                  lg:leading-[2rem] xl:leading-[3.25rem] leading-[2.5rem]">
+                     Data Analytics
+                     and Visualization 
+                  </p>
                   <p className="tracking-widest text-[0.9vw] font-bai-jamjuree text-base-black/75 mt-2">
                      ดูสิ! ท่องเน็ตทีไร โฆษณาตรงใจทุกที?
                      มาไขขำตอบ ผ่านวิชานี้กัน! เรียนรู้ภาษา Python ไปจนถึงกระบวนท่าในการวิเคราะห์ข้อมูล ด้วย Pandas</p>
                </div>
                <div data-aos="zoom-in" data-aos-delay="300">
-                  <p className="font-teko tracking-widest text-[3vw] drop-shadow-lg text-base-black leading-10 mt-2 xl:mt-10">Build a Game</p>
+                  <p className="font-teko tracking-widest text-[3vw] drop-shadow-lg text-base-black leading-10 mt-2 xl:mt-[12.5%]">Build a Game</p>
                   <p className="tracking-widest text-[0.9vw] font-bai-jamjuree text-base-black/75">
                      ชอบเล่นเกม ทำไมเราไม่ลองสร้างเกมมาเล่นเองกันบ้างหล่ะ? เรียนรู้การสร้างเกมเบื้องต้น ด้วย Unity และ C#</p>
                </div>
@@ -62,7 +65,7 @@ const LearningSection = () => {
                         ดูสิ! ท่องเน็ตทีไร โฆษณาตรงใจทุกที?
                         มาไขขำตอบ ผ่านวิชานี้กัน! เรียนรู้ภาษา Python ไปจนถึงกระบวนท่าในการวิเคราะห์ข้อมูล ด้วย Pandas</p>
                   </div>
-                  <div className="ml-4 mt-[20%] sm:mt-[25%] md:mt-[35%]" data-aos="zoom-in" data-aos-delay="150">
+                  <div className="ml-4 mt-[15%] sm:mt-[25%] md:mt-[35%]" data-aos="zoom-in" data-aos-delay="150">
                      <p className="font-teko tracking-widest text-[7.5vw] sm:text-5xl drop-shadow-lg text-base-black leading-10 text-left">
                         Build a Game</p>
                      <p className="tracking-widest sm:text-xl text-[3vw] font-bai-jamjuree text-base-black/75 mt-0s text-left">
