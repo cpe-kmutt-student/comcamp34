@@ -14,7 +14,7 @@ const ContactSection = () => {
                data-aos-duration='1000'
             ></div>
             <div
-               className='bg-base-white lg:rounded-[30px] rounded-l-[30px] lg:my-8 lg:mr-16 lg:p-16 p-6 h-fit '
+               className='bg-base-white lg:rounded-[30px] rounded-l-[30px] lg:my-8 lg:mr-16 lg:p-16 p-6 h-fit'
                data-aos='fade-left'
                data-aos-duration='1000'
             >
