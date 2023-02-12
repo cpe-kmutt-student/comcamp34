@@ -95,7 +95,7 @@ const AboutSection = () => {
    return (
       <div className={`w-full flex bg-${string}`}>
          <div className='mx-auto relative w-full h-[600vh] hidden xl:block' ref={divRef}>
-            <div className='sticky top-5 mx-auto flex'>
+            <div className='sticky top-10 mx-auto flex'>
                <div className='w-full relative overflow-hidden h-screen '>
                   {textToggle ? (
                      <p
@@ -107,7 +107,7 @@ const AboutSection = () => {
                   ) : null}
                   {textToggle ? (
                      <p
-                        className='text-3xl absolute text-base-black mt-[27.5%] xl:mt-[40vh] ml-[2.5%] mr-[35%] 
+                        className='text-3xl absolute text-base-black mt-[27.5%] xl:mt-[41vh] ml-[2.5%] mr-[35%] 
                          z-50 font-bai-jamjuree'
                         data-aos='zoom-in'
                      >
@@ -181,19 +181,20 @@ const AboutSection = () => {
                         className='w-[50vh] z-20 h-full'
                      />
                      <div className='w-[250vw] right-0 h-full py-6 absolute z-100 pr-4'>
-                        <div className='bg-[#EB7D3E] h-full w-full'></div>
+                        <div className='bg-[#EB7D3E] h-full w-full'>
+                        </div>
                      </div>
                   </div>
                </div>
                {textMobileToggle ? (
                   <div
-                     className='text-[2vh] sm:text-3xl text-base-black absolute left-0 z-1000 mt-[50vh] sm:mt-[55vh] ml-4 sm:ml-10
+                     className='text-[2vh] sm:text-3xl text-base-black absolute left-0 z-1000 mt-[50vh] sm:mt-[54vh] ml-4 sm:ml-10
                         mr-[40%] sm:mr-[37.5%] font-bai-jamjuree'
                      data-aos='zoom-in'
                   >
                      ค่าย Comcamp คือ ค่ายที่ทางภาควิชา วิศวกรรมคอมพิวเตอร์ มจธ. ได้จัดขึ้น
                      เพื่อให้น้อง ๆ ได้มาสัมผัสประสบการณ์ การเรียนรู้เสมือนน้อง ๆ
-                     เป็นส่วนหนึ่งของรั้วแสดเหลือง โดยในค่ายมีการแนะแนวศึกษาต่อ และ
+                     เป็นส่วนหนึ่งของรั้วแสดเหลือง โดยในค่ายมีการแนะแนวศึกษาต่อและ
                      ยังได้ร่วมสนุกกับกิจกรรมสันทนาการจากพี่ ๆ CPE อีกด้วย
                   </div>
                ) : null}

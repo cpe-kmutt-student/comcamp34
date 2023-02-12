@@ -55,7 +55,7 @@ const LearningSection = () => {
                      Data Analytics and Visualization
                   </p>
                   <p className='tracking-widest text-[0.9vw] font-bai-jamjuree text-base-black/75 mt-2'>
-                     ดูสิ! ท่องเน็ตทีไร โฆษณาตรงใจทุกที? มาไขขำตอบ ผ่านวิชานี้กัน! เรียนรู้ภาษา
+                     ดูสิ! ท่องเน็ตทีไร โฆษณาตรงใจทุกที! มาไขคำตอบ ผ่านวิชานี้กัน! เรียนรู้ภาษา
                      Python ไปจนถึงกระบวนท่าในการวิเคราะห์ข้อมูล ด้วย Pandas
                   </p>
                </div>
@@ -88,7 +88,7 @@ const LearningSection = () => {
                         Data Analytics and Visualization{" "}
                      </p>
                      <p className='tracking-widest sm:text-lg md:text-xl  text-[3vw] font-bai-jamjuree text-base-black/75 mt-2 text-left'>
-                        ดูสิ! ท่องเน็ตทีไร โฆษณาตรงใจทุกที? มาไขขำตอบ ผ่านวิชานี้กัน! เรียนรู้ภาษา
+                        ดูสิ! ท่องเน็ตทีไร โฆษณาตรงใจทุกที! มาไขคำตอบ ผ่านวิชานี้กัน! เรียนรู้ภาษา
                         Python ไปจนถึงกระบวนท่าในการวิเคราะห์ข้อมูล ด้วย Pandas
                      </p>
                   </div>
@@ -131,8 +131,8 @@ const LearningSection = () => {
                         Microcontroller
                      </p>
                      <p className='tracking-widest sm:text-xl text-[2.75vw] font-bai-jamjuree text-base-black/75 mt-0s text-left mr-[2%]'>
-                        ปลดล็อคศักยภาพในการควบคุมอุปกรณ์ที่เปรียบเสมือนเครื่อง คอมพิวเตอร์
-                        ขนาดเท่าฝ่ามือ ของคุณ เพื่อสรรค์สร้าง เทคโนโลยีสุดล้ำแห่งอนาคต
+                        ปลดล็อคศักยภาพในการควบคุมอุปกรณ์ที่เปรียบเสมือนเครื่องคอมพิวเตอร์
+                        ขนาดเท่าฝ่ามือของคุณ เพื่อสรรค์สร้างเทคโนโลยีสุดล้ำแห่งอนาคต
                      </p>
                   </div>
                   <div
