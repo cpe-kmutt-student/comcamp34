@@ -4,17 +4,13 @@ const AboutSection = () => {
    const divRef = useRef<HTMLDivElement>(null);
    const imgRef = useRef<HTMLImageElement>(null);
    const mobileDivRef = useRef<HTMLDivElement>(null);
-   const [string, setString] = useState<any>("base-black");
    const [notebookRotation, setNoteBookRotation] = useState<number>(-45);
-   const [bookRotation, setBookRotation] = useState<number>(-45);
    const [textToggle, setTextToggle] = useState<boolean>(false);
    const [textMobileToggle, setMobileTextToggle] = useState<boolean>(false);
    useEffect(() => {
-      setString("base-black");
       const handleScroll = () => {
          let notebook: any = document.getElementById("notebook");
          let book: any = document.getElementById("book");
-         let coffee: any = document.getElementById("coffee");
          let mobile_notebook: any = document.getElementById("mobile_notebook");
          let value: number = window.scrollY;
          let top_notebook = 50 + (window.innerHeight - notebook.offsetHeight) / 0.7;
@@ -29,28 +25,19 @@ const AboutSection = () => {
             const divPosStage2 = div.offsetTop + div.offsetHeight / 1.75;
             const divPosStage3 = div.offsetTop + div.offsetHeight / 1.25;
             const divPosStage4 = div.offsetTop + div.offsetHeight / 1.15;
-            const divPosStageEnd = div.offsetTop + div.offsetHeight / 0.25;
             const mobileDivPosStage1 = mobileDiv.offsetTop + mobileDiv.offsetHeight / 3;
             const mobileDivPosStage2 = mobileDiv.offsetTop + mobileDiv.offsetHeight / 1.25;
             const mobileDivPosStage3 = mobileDiv.offsetTop + mobileDiv.offsetHeight / 1.15;
-            const mobileDivPosStageEnd = mobileDiv.offsetTop + mobileDiv.offsetHeight / 0.5;
             if (scrollPos < divPosStage1) {
-               setString("base-black");
-               notebook.style.left = 100 + value * 0.35 + "px";
-               notebook.style.top = top_notebook + -value * 0.26 + "px";
-               book.style.left = left_book + value * 0.5 + "px";
-               book.style.top = -top_book + value * 0.25 + 100 + "px";
-               //coffee.style.right = -400+(value * 0.5) + "px";
-               //coffee.style.top = -100+(value * 0.4) + 100 + "px";
+               notebook.style.left = 100 + value * 0.5 + "px";
+               notebook.style.top = top_notebook + -value * 0.385 + "px";
+               book.style.left = left_book + value * 0.8 + "px";
+               book.style.top = -top_book + value * 0.375 + 100 + "px";
             }
             if (scrollPos >= divPosStage1 && scrollPos < divPosStage2) {
-               setString("base-black");
                if (scrollPos > divPosStage1 + (divPosStage2 - divPosStage1) / 2) {
                   setNoteBookRotation(prevNotebookRotation => {
                      return Math.min(0, prevNotebookRotation + window.scrollY / 100);
-                  });
-                  setBookRotation(prevBookRotation => {
-                     return Math.min(0, prevBookRotation + window.scrollY / 100);
                   });
                } else {
                   setNoteBookRotation(prevNotebookRotation => {
@@ -59,7 +46,6 @@ const AboutSection = () => {
                }
             }
             if (divPosStage2 <= scrollPos && scrollPos < divPosStage3) {
-               setString("base-black");
                const percent = (scrollPos - divPosStage2) / (divPosStage3 - divPosStage2);
                notebook.style.left =
                   0.3 * window.innerWidth +
@@ -72,17 +58,9 @@ const AboutSection = () => {
                setTextToggle(false);
             }
             if (divPosStage3 <= scrollPos && scrollPos < divPosStage4) {
-               setString("base-black");
                setTextToggle(true);
             }
-            if (divPosStage4 <= scrollPos && scrollPos < divPosStageEnd) {
-               setString("base-black");
-            }
-            if (scrollPos < mobileDivPosStage1) {
-               //setString("blue1");
-            }
             if (mobileDivPosStage1 <= scrollPos && mobileDivPosStage2 > scrollPos) {
-               //setString("red2");
                const percent =
                   (scrollPos - mobileDivPosStage1) / (mobileDivPosStage2 - mobileDivPosStage1);
                mobile_notebook.style.left = -20 + (70 - -20) * percent + "%";
@@ -90,10 +68,6 @@ const AboutSection = () => {
             }
             if (mobileDivPosStage2 <= scrollPos && mobileDivPosStage3 > scrollPos) {
                setMobileTextToggle(true);
-               setString("base-black");
-            }
-            if (mobileDivPosStage3 <= scrollPos && scrollPos < mobileDivPosStageEnd) {
-               setString("base-black");
             }
          }
       };
@@ -105,8 +79,8 @@ const AboutSection = () => {
    }, []);
 
    return (
-      <div id="about" className={`w-full flex bg-${string}`}>
-         <div className='mx-auto relative w-full h-[600vh] hidden xl:block' ref={divRef}>
+      <div id="about" className="w-full flex bg-base-black">
+         <div className='mx-auto relative w-full h-[400vh] hidden xl:block' ref={divRef}>
             <div className='sticky top-12 mx-auto flex'>
                <div className='w-full relative overflow-hidden h-screen '>
                   {textToggle ? (
@@ -119,8 +93,8 @@ const AboutSection = () => {
                   ) : null}
                   {textToggle ? (
                      <p
-                        className='text-3xl absolute text-base-black mt-[27.5%] xl:mt-[41vh] ml-[2.5%] mr-[35%] 
-                         z-50 font-bai-jamjuree'
+                        className='2xl:text-4xl lg:text-3xl absolute text-base-black lg:mt-[27.5%] xl:mt-[36vh] xl:ml-[3.5%]  lg:ml-[5%] mr-[35%] 
+                         z-50 font-bai-jamjuree lg:leading-normal 2xl:leading-normal'
                         data-aos='zoom-in'
                      >
                         ค่าย Comcamp คือค่ายที่ทางภาควิชาวิศวกรรมคอมพิวเตอร์ มจธ. ได้จัดขึ้น
@@ -166,7 +140,7 @@ const AboutSection = () => {
             </div>
          </div>
          <div
-            className={`mx-auto relative w-full h-[400vh] bg-${string} block xl:hidden`}
+            className={`mx-auto relative w-full h-[200vh] bg-base-black block xl:hidden`}
             ref={mobileDivRef}
             id="about"
          >
@@ -199,8 +173,8 @@ const AboutSection = () => {
                </div>
                {textMobileToggle ? (
                   <div
-                     className='text-[2vh] sm:text-3xl text-base-black absolute left-0 z-1000 mt-[50vh] sm:mt-[54vh] ml-4 sm:ml-10
-                        mr-[40%] sm:mr-[37.5%] font-bai-jamjuree'
+                     className='text-[2vh] sm:text-3xl text-base-black absolute left-0 z-1000 mt-[50vh] sm:mt-[51vh] ml-4 sm:ml-10
+                        mr-[40%] sm:mr-[37.5%] font-bai-jamjuree sm:leading-normal'
                      data-aos='zoom-in'
                   >
                      ค่าย Comcamp คือค่ายที่ทางภาควิชาวิศวกรรมคอมพิวเตอร์ มจธ. ได้จัดขึ้น
